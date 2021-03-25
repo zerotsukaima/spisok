@@ -22,21 +22,15 @@ for j in numericList:
 #добавление элементов в новый список по порядку, без нулей
 newNumericList = []
 for k in numericList:
-    if k != 0:
-       newNumericList.append(k)
+    if k != 0 and k < maxElementInList1:
+        newNumericList.append(k)
+        numericList.append(0)
 
 #поиск максимума в новом списке
 maxElementInList2 = 0
 for q in newNumericList:
     if q > maxElementInList2:
         maxElementInList2 = q
-
-#добавление нулей при нахождении максимума в новом списке
-for x in newNumericList:
-    if x == newNumericList.index(maxElementInList2):
-        newNumericList.insert(maxElementInList2 + 1, 0) #вставляет один ноль, а надо чтобы все из счетчика
-
-#надо подумать над тем что индекс не берется за начало
 
 print("Cписок псевдослучайных чисел: ", numericList)
 print("Список чисел после решения задачи: ", newNumericList)
