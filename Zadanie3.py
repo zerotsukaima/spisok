@@ -2,7 +2,7 @@ import random
 n = 3
 m = 3
 matrix = []
-counterNegative = counterPositive = counterZero = 0
+counterNegative = counterPositive = 0
 
 for i in range(n):
     matrix.append([])
@@ -17,9 +17,6 @@ for i in range(n):
             counterPositive += 1
         elif matrix[i][j] < 0:
             counterNegative += 1
-        else:
-            counterZero += 1
 
 print("\nКоличество положительных = ", counterPositive)
 print("\nКоличество отрицательных = ", counterNegative)
-print("\nКоличество нулей = ", counterZero)
