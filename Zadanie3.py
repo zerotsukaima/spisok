@@ -1,6 +1,6 @@
 import random
-n = 3
-m = 3
+n = int(input("Введите размер матрицы: "))
+m = int(input("Введите размер матрицы: "))
 matrix = []
 counterNegative = counterPositive = 0
 
