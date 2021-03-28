@@ -3,9 +3,9 @@ numbers = [i for i in range(n + 1)]
 numbers[0] = 0
 newNumbers = []
 
-for i in range(2, n + 1):
-    for j in range(i * 2, n + 1, i):
-        if numbers[j] != 0:
+for i in range(1, n + 1):
+    for j in range(i, n + 1):
+        if numbers[j] != 0 and numbers[j] % 7 != 0:
             numbers[j] = 0
             newNumbers.append(j)
 

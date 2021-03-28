@@ -18,13 +18,13 @@ for i in range(n):
     for j in range(m):
         print(" ")
         for j in range(t):
-            print(matrix[i][j], end = " ")
-            if matrix[i][j] > maximumElementMatrix:
-                maximumElementMatrix = matrix[i][j]
+            print(matrix[i][j][k], end = " ")
+            if matrix[i][j][k] > maximumElementMatrix:
+                maximumElementMatrix = matrix[i][j][k]
 
 for i in range(len(matrix)):
-    if matrix[i] > maximumElementMatrixIndex:
-        maximumElementMatrixIndex = matrix[i]
+    if matrix[i][j][k] > maximumElementMatrixIndex:
+       maximumElementMatrixIndex = matrix[i][j][k]
 maxIndex = matrix.index(maximumElementMatrixIndex)
 
 print("\n\nМаксимальный элемент матрицы: ", maximumElementMatrix)
