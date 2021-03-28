@@ -27,8 +27,6 @@ for i in range(len(matrix)):
         maximumElementMatrixIndex = matrix[i]
 maxIndex = matrix.index(maximumElementMatrixIndex)
 
-
-
 print("\n\nМаксимальный элемент матрицы: ", maximumElementMatrix)
 print('\n Индекс: ', maxIndex)
 
