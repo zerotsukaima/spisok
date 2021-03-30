@@ -9,24 +9,29 @@ maximumElementMatrixIndex = [0]
 for i in range(n):
     matrix.append([])
     for j in range(m):
-        matrix.append([])
+        matrix[i].append([])
         for k in range(t):
-            matrix[i].append(random.randint(0, 9))
+            matrix[i][j].append(random.randint(0, 9))
 
+maximumElementMatrix = - 100
 for i in range(n):
-    print("")
     for j in range(m):
-        print(" ")
-        for j in range(t):
-            print(matrix[i][j][k], end = " ")
+        for k in range(t):
             if matrix[i][j][k] > maximumElementMatrix:
                 maximumElementMatrix = matrix[i][j][k]
 
-for i in range(len(matrix)):
-    if matrix[i][j][k] > maximumElementMatrixIndex:
-       maximumElementMatrixIndex = matrix[i][j][k]
-maxIndex = matrix.index(maximumElementMatrixIndex)
+inx_x = []
+for i in range(n):
+    inx_x.append([])
+    for j in range(m):
+        inx_x[i].append([])
+        for k in range(t):
+            if matrix[i][j][k] == inx_x:
+                print("\n\nМаксимальный элемент матрицы: ", maximumElementMatrix)
 
-print("\n\nМаксимальный элемент матрицы: ", maximumElementMatrix)
-print('\n Индекс: ', maxIndex)
-
+for i in range(n):
+   print("")
+   for j in range(m):
+       print(" ")
+       for k in range(t):
+           print(matrix[i][j][k], end = " ")
