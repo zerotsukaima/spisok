@@ -26,8 +26,8 @@ for i in range(n):
     for j in range(m):
         inx_x[i].append([])
         for k in range(t):
-            if matrix[i][j][k] == inx_x:
-                print("\n\nМаксимальный элемент матрицы: ", maximumElementMatrix)
+            if matrix[i][j][k] == maximumElementMatrix:
+                print("\nИндекс максимальных элементов: ", i, j, k)
 
 for i in range(n):
    print("")
